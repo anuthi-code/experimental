@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Game</title>
     <link rel="stylesheet" href="style.css">
-    <title>Music Game</title>
 </head>
 <body>
-    <h1>Welcome to the Music Game!</h1>
+    <div class="game-container">
+        <h1>🎵 Music Game 🎮</h1>
+        <div class="score-board">
+            <p>Score: <span id="score">0</span></p>
+            <p>Combo: <span id="combo">0</span></p>
+        </div>
+        <div class="game-area">
+            <!-- Falling notes will appear here -->
+        </div>
+        <div class="instructions">
+            <p>Press ARROW KEYS or A/D to hit the notes!</p>
+            <button id="startBtn">Start Game</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
